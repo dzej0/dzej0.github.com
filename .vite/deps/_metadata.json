@@ -1,0 +1,25 @@
+{
+  "hash": "404c4a4a",
+  "configHash": "917a76fb",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "41c9248f",
+  "optimized": {
+    "three": {
+      "src": "../../projects/charge_sim/node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "92fba629",
+      "needsInterop": false
+    },
+    "three/addons/controls/TrackballControls.js": {
+      "src": "../../projects/charge_sim/node_modules/three/examples/jsm/controls/TrackballControls.js",
+      "file": "three_addons_controls_TrackballControls__js.js",
+      "fileHash": "b5fba3b6",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-AYHSNDGQ": {
+      "file": "chunk-AYHSNDGQ.js"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(3, 1, 8);
+    color: azure;
+}
+
+
+
+a:link {
+    color: hsl(240, 20%, 80%)
+}
+
+a:visited {
+    color: hsl(240, 20%, 65%)
+}
+
+a:hover {
+    color: white;
+}
