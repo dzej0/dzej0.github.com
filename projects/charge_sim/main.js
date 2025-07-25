@@ -1,8 +1,8 @@
 import * as THREE from 'three'
 import { TrackballControls } from 'three/addons/controls/TrackballControls.js'
-import { PhysObj } from './objects/physObj'
-import { addButtonEvents } from './user_input'
-import { paused } from './user_input'
+import { PhysObj } from './physObj.js'
+import { addButtonEvents } from './user_input.js'
+import { paused } from './user_input.js'
 
 const screen = document.getElementById("sim")
 

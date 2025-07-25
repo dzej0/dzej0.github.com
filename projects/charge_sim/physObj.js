@@ -1,5 +1,5 @@
-import * as THREE from 'three'
-import { Vector3 } from "three"
+import * as THREE from "three";
+import { Vector3 } from "three";
 
 const k = 0.1
 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Electrostatic Charge Simulator</title>
+
+  
+  <script type="module" crossorigin src="/assets/index-DkCeU9j3.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-IoR2ha4P.css">
+</head>
+<body>
+  <noscript><p style="color: red">Please enable JavaScript to run this website</p></noscript>
+  <div id="main" style="display:flex">
+    <div id="sim-container" style="display: flex; flex-direction: column;">
+      <div id="top-display">Simulation</div>
+      <div id="sim"></div>
+      <div id="bottom-display">
+        <div>
+          <button id="pause" style="background-color: rgb(17, 125, 46); text-align: center; width: 30px; height: 30px;">▶</button>
+        </div>
+        <div>
+          Sim precision (higher value - slower, more accurate)
+          <input id="sim-precision" type="range" min="0.01" max="3" step="0.01" style="width: 15%;">
+        </div>
+      </div>
+    </div>
+    <div id="menu" style="display: flex; flex-direction: column; width: 20%">
+      <div id="menu_top">
+        <div>
+          Add new charge<br>
+          Moveable: <input type="checkbox" id="input_moveable"><br>
+          Mass: <input type="number" id="input_mass" value="1"><br>
+          Charge: <input type="number" id="input_charge" value="1"><br>
+          Initial velocity:<br>
+          x: <input type="number" id="input_v_x" value="0"><br>
+          y: <input type="number" id="input_v_y" value="0"><br>
+          z: <input type="number" id="input_v_z" value="0"><br>
+          Position:<br>
+          x: <input type="number" id="input_pos_x" value="0"><br>
+          y: <input type="number" id="input_pos_y" value="0"><br>
+          z: <input type="number" id="input_pos_z" value="0"><br><br>
+        </div>
+        
+        <button class="button" id="add_button">Add [Enter]</button>
+      </div>
+      <div id="menu_bottom" style="display: flex; flex-direction: row; flex: 1; ">
+        <button class="button" id="clear_button" style="background-color: rgb(150, 0, 0);margin-top: auto;">Clear Scene</button>
+      </div>
+    </div>
+  </div>
+  
+
+  </body>
+</html>

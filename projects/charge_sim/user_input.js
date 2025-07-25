@@ -1,5 +1,5 @@
-import * as THREE from 'three'
-import { PhysObj } from './objects/physObj'
+import * as THREE from "three";
+import { PhysObj } from './physObj.js'
 
 const pauseButton = document.getElementById("pause")
 
