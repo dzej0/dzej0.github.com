@@ -43,11 +43,11 @@ jobs:
           rm -f 'index.html'
           cp -a ./projects/charge_sim/dist/. ./projects/charge_sim/
           echo DEBUG: trying to delete everything but assets
-          find ./projects/charge_sim/ ! -name 'assets' -type d
+          find ./projects/charge_sim/* ! -name 'assets' -type d -exec rm -rf {} +
           dir ./projects
           dir ./projects/charge_sim
           echo DEBUG: trying to delete everything but index.html
-          find ./projects/charge_sim/ ! -name 'index.html' -type f
+          find ./projects/charge_sim/* ! -name 'index.html' -type f -exec rm -rf {} +
           echo success
 
       - name: Checkout pascals triangle repo
