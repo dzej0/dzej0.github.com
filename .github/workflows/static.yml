@@ -63,7 +63,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          name: test-artifact
           path: './dist'
           
       - name: Deploy to GitHub Pages
