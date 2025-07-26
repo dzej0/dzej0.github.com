@@ -48,9 +48,14 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add .
-          git commit -m "update subpages"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/dzej0/dzej0.github.com.git HEAD:main
+
+          if git diff --quiet; then
+            echo No changes, not commiting
+          else
+            git add .
+            git commit -m "update subpages"
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/dzej0/dzej0.github.com.git HEAD:main
+          fi
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
