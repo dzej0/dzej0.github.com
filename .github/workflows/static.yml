@@ -74,8 +74,7 @@ jobs:
           path: '.'
 
       - name: debug
-        run: |
-          ls ./github-pages
+        run: dir .
           
       - name: Deploy to GitHub Pages
         id: deployment
