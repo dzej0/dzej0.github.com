@@ -35,7 +35,7 @@ jobs:
       - name: Checkout charge sim repo
         uses: actions/checkout@v4
         with:
-          repository: dzej0/threejs_charge_sim
+          repository: dzej0/threejs_charge_sim/dist
           path: projects/charge_sim
 
       - name: Checkout pascals triangle repo
