@@ -40,9 +40,13 @@ jobs:
 
       - name: Pull out dist folder contents and delete unnecessary files
         run: |
+          rm -f 'index.html'
           cp -a ./projects/charge_sim/dist/. ./projects/charge_sim/
+          echo DEBUG: trying to delete everything but assets
           find ./projects/charge_sim ! -name 'assets' -type d -exec rm -rf {} +
+          echo DEBUG: trying to delete everything but index.html
           find ./projects/charge_sim ! -name 'index.html' -type f -exec rm -f {} +
+          echo success
 
       - name: Checkout pascals triangle repo
         uses: actions/checkout@v4
